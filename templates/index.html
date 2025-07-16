@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Open Sans', sans-serif;
+            color: #2d3748;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        nav a {
+            font-weight: 600;
+            color: #4a5568;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #5a67d8;
+        }
+
+        .hero {
+            padding: 120px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #e2e8f0;
+        }
+
+        .cta-button {
+            background-color: #5a67d8;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0dc19d;
+        }
+
+        .features-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+            background-color: #fff;
+            box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-box {
+    max-width: 25%;
+    padding: 20px;
+    background: #f0f4ff; /* Lighter background for a fresh look */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added box-shadow transition */
+    margin: 10px; /* Added margin for spacing */
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-box h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .feature-box p {
+            font-size: 1rem;
+            color: #718096;
+        }
+
+        footer {
+            background-color: #f0f1f3;
+            padding: 40px;
+            color: rgb(12, 12, 12);
+            text-align: center;
+            margin-top: 60px;
+        }
+    </style>
+    <title>BuzzInsight</title>
+</head>
+
+<body>
+    <header class="flex justify-between items-center p-6">
+        <a href="{{ url_for('home') }}" class="text-xl font-semibold">BuzzInsight</a>
+        <nav class="flex items-center">
+            <a href="{{ url_for('home') }}" class="mr-5 hover:text-gray-900">Home</a>
+    <a href="{{ url_for('about') }}" class="mr-5 hover:text-gray-900">About</a>
+    <a href="{{ url_for('contact') }}" class="mr-5 hover:text-gray-900">Contact Us</a>
+    {% if user %}
+    <a href="{{ url_for('profile') }}" class="mr-5 hover:text-gray-900">Profile</a>
+    {% else %}
+    <a href="{{ url_for('login') }}" class="mr-5 hover:text-gray-900">Login</a>
+    {% endif %}
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Discover Products Powered by Sentiment Analysis</h1>
+        <p>Unveil the best products from authentic customer feedback and smart data analytics</p>
+        <a href="{{ url_for('explore') }}" class="cta-button">Explore Now</a>
+    </section>
+
+    <section class="features-section">
+        <div class="feature-box">
+            <h2>Sentiment Breakdown</h2>
+            <p>Analyze product reviews in detail and understand strengths and weaknesses.</p>
+        </div>
+        <div class="feature-box">
+            <h2>Top-Rated Products</h2>
+            <p>Find top-rated products curated by our algorithms based on customer reviews.</p>
+        </div>
+        <div class="feature-box">
+            <h2>Feedback Trends</h2>
+            <p>Identify trends in customer feedback and make informed decisions.</p>
+        </div>
+        <div class="feature-box">
+            <h2>Multi-Store Comparison</h2>
+            <p>Compare products across stores and find the best deals with our insights.</p>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

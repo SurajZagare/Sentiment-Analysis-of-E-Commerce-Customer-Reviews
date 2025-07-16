@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+      font-family: 'Open Sans', sans-serif;
+      color: #2d3748;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+    nav a {
+      font-weight: 600;
+      color: #4a5568;
+      margin: 0 20px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #5a67d8;
+    }
+    .profile-container {
+      max-width: 600px;
+      margin: 100px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .profile-container h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #2d3748;
+    }
+    .profile-container p {
+      font-size: 1.2rem;
+      color: #718096;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background-color: #5a67d8;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #0dc19d;
+    }
+  </style>
+  <title>Profile - BuzzInsight</title>
+</head>
+<body>
+  <header class="flex justify-between items-center p-6">
+    <a href="{{ url_for('home') }}" class="text-xl font-semibold">BuzzInsight</a>
+    <nav class="flex items-center">
+      <a href="{{ url_for('home') }}" class="mr-5 hover:text-gray-900">Home</a>
+      <a href="{{ url_for('about') }}" class="mr-5 hover:text-gray-900">About</a>
+      <a href="{{ url_for('contact') }}" class="mr-5 hover:text-gray-900">Contact Us</a>
+      {% if user %}
+        <a href="{{ url_for('profile') }}" class="mr-5 hover:text-gray-900">Profile</a>
+      {% else %}
+        <a href="{{ url_for('login') }}" class="mr-5 hover:text-gray-900">Login</a>
+      {% endif %}
+    </nav>
+  </header>
+
+  <div class="profile-container">
+    <h1>Your Profile</h1>
+    <p><strong>Name :</strong> {{ user.name }}</p>
+    <p><strong>Phone :</strong> {{ user.phone }}</p>
+    <p><strong>Email :</strong> {{ user.email }}</p>
+    <!-- Add more user details if necessary -->
+    <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+  </div>
+</body>
+</html>

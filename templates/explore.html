@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Your Product - BuzzInsight</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+      margin: 0;
+      padding: 0;
+      color: #2d3748;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-6">
+      <a href="{{ url_for('home') }}" class="text-xl font-semibold text-gray-800">BuzzInsight</a>
+      <nav class="flex space-x-6">
+        <a href="{{ url_for('home') }}" class="hover:text-gray-900">Home</a>
+        <a href="{{ url_for('about') }}" class="hover:text-gray-900">About</a>
+        <a href="{{ url_for('contact') }}" class="hover:text-gray-900">Contact Us</a>
+        {% if user %}
+          <a href="{{ url_for('profile') }}" class="hover:text-gray-900">Profile</a>
+          <!-- Cart link added for logged-in users -->
+          <a href="{{ url_for('cart') }}" class="hover:text-gray-900">Cart</a>
+        {% else %}
+          <a href="{{ url_for('login') }}" class="hover:text-gray-900">Login</a>
+        {% endif %}
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 text-white">
+    <h1 class="text-4xl font-bold mb-4">Review Your Product</h1>
+    <p class="text-lg">Discover products powered by sentiment analysis.</p>
+  </section>
+
+  <!-- Search, Filter & Sort -->
+  <section class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center justify-center mb-8 space-y-4 md:space-y-0 md:space-x-4">
+      <input
+        type="text"
+        id="search"
+        class="w-full md:w-1/2 p-3 rounded-full border-2 border-indigo-600 focus:outline-none focus:border-pink-500"
+        placeholder="🔍 Search for products..."
+        onkeyup="debounceSearch()"
+      />
+      <input
+        type="number"
+        id="minPrice"
+        class="p-3 rounded-full border-2 border-indigo-600 focus:outline-none focus:border-pink-500"
+        placeholder="Min Price"
+      />
+      <input
+        type="number"
+        id="maxPrice"
+        class="p-3 rounded-full border-2 border-indigo-600 focus:outline-none focus:border-pink-500"
+        placeholder="Max Price"
+      />
+      <select
+        id="sortOrder"
+        class="p-3 rounded-full border-2 border-indigo-600 focus:outline-none focus:border-pink-500"
+      >
+        <option value="">Sort by Price</option>
+        <option value="asc">Low to High</option>
+        <option value="desc">High to Low</option>
+      </select>
+      <button
+        class="bg-indigo-600 hover:bg-pink-500 text-white font-semibold py-3 px-6 rounded-full"
+        onclick="searchProducts()"
+      >
+        Filter
+      </button>
+    </div>
+    <p class="mt-2 text-white text-center" id="loading" style="display: none;">Searching...</p>
+    <!-- Product Grid -->
+    <div id="results" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {% for product in products %}
+      <div
+        class="bg-white p-4 rounded-lg shadow-lg transform hover:scale-105 cursor-pointer transition"
+        onclick="window.location.href='/product/{{ product.id }}'"
+      >
+        <img src="{{ product.image }}" alt="{{ product.name }}" class="w-40 h-40 mx-auto rounded-lg" />
+        <h3 class="text-xl font-semibold text-indigo-600 mt-4 text-center">{{ product.name }}</h3>
+        <p class="text-lg font-bold text-pink-500 text-center">{{ product.price }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- JavaScript for Search, Filter & Sort -->
+  <script>
+    let timeout = null;
+
+    function debounceSearch() {
+      clearTimeout(timeout);
+      timeout = setTimeout(searchProducts, 500);
+    }
+
+    function searchProducts() {
+      const query = document.getElementById("search").value.trim();
+      const minPrice = document.getElementById("minPrice").value.trim();
+      const maxPrice = document.getElementById("maxPrice").value.trim();
+      const sortOrder = document.getElementById("sortOrder").value.trim();
+      const loading = document.getElementById("loading");
+      const resultsDiv = document.getElementById("results");
+
+      // Reload the page if no query or filters are provided.
+      if (query.length === 0 && minPrice === "" && maxPrice === "" && sortOrder === "") {
+        location.reload();
+        return;
+      }
+
+      loading.style.display = "block";
+
+      // Construct the query parameters.
+      let url = `/search?query=${encodeURIComponent(query)}`;
+      if (minPrice !== "") {
+        url += `&minPrice=${encodeURIComponent(minPrice)}`;
+      }
+      if (maxPrice !== "") {
+        url += `&maxPrice=${encodeURIComponent(maxPrice)}`;
+      }
+      if (sortOrder !== "") {
+        url += `&sort=${encodeURIComponent(sortOrder)}`;
+      }
+
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          loading.style.display = "none";
+          resultsDiv.innerHTML = "";
+
+          if (data.length === 0) {
+            resultsDiv.innerHTML = "<p class='col-span-full text-center text-white'>No products found.</p>";
+            return;
+          }
+
+          data.forEach(product => {
+            const productDiv = document.createElement("div");
+            productDiv.classList.add("bg-white", "p-4", "rounded-lg", "shadow-lg", "transform", "hover:scale-105", "cursor-pointer", "transition");
+            productDiv.onclick = () => window.location.href = `/product/${product.id}`;
+            productDiv.innerHTML = `
+              <img src="${product.image}" alt="${product.name}" class="w-40 h-40 mx-auto rounded-lg">
+              <h3 class="text-xl font-semibold text-indigo-600 mt-4 text-center">${product.name}</h3>
+              <p class="text-lg font-bold text-pink-500 text-center">${product.price}</p>
+            `;
+            resultsDiv.appendChild(productDiv);
+          });
+        })
+        .catch(error => {
+          console.error("Error fetching products:", error);
+          resultsDiv.innerHTML = "<p class='col-span-full text-center text-red-500'>Error fetching results.</p>";
+          loading.style.display = "none";
+        });
+    }
+  </script>
+</body>
+</html>

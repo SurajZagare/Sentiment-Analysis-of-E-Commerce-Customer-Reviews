@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Open Sans', sans-serif;
+            color: #2d3748;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+
+        nav a {
+            font-weight: 600;
+            color: #4a5568;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #5a67d8;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            margin-top: 100px; /* To offset fixed header */
+        }
+
+        .form-container h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #e2e8f0;
+            font-size: 1rem;
+            color: #4a5568;
+            background-color: #f7fafc;
+            box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #5a67d8;
+            box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.3);
+        }
+
+        .btn {
+            background-color: #5a67d8;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: #434190;
+        }
+
+        a {
+            color: #5a67d8;
+            font-size: 0.9rem;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    <title>Login - BuzzInsight</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="flex justify-between items-center p-6">
+        <a href="{{ url_for('home') }}" class="text-xl font-semibold">BuzzInsight</a>
+        <nav class="flex items-center">
+            <a href="{{ url_for('home') }}" class="mr-5 hover:text-gray-900">Home</a>
+            <a href="{{ url_for('about') }}" class="mr-5 hover:text-gray-900">About</a>
+            <a href="{{ url_for('contact') }}" class="mr-5 hover:text-gray-900">Contact Us</a>
+            <a href="{{ url_for('login') }}" class="mr-5 hover:text-gray-900">Login</a>
+        </nav>
+    </header>
+
+    <!-- Login Form -->
+    <div class="form-container">
+        <h2>Login</h2>
+        <form method="POST">
+            <input type="email" class="input-field" name="email" placeholder="Enter Email" required><br>
+            <input type="password" class="input-field" name="password" placeholder="Enter Password" required><br>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <a href="{{ url_for('signup') }}">Don't have an account? Signup here</a>
+    </div>
+
+</body>
+
+</html>

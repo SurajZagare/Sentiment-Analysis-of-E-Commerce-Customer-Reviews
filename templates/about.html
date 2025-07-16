@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>About Us - BuzzInsight</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Open Sans', sans-serif;
+            color: #2d3748;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        nav a {
+            font-weight: 600;
+            color: #4a5568;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d7d8e2;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #2d3748;
+            text-align: center;
+        }
+
+        section {
+            padding: 60px 20px;
+            background-color: #ffffff;
+            box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 1200px;
+        }
+
+        .icon-box {
+            background-color: #e2e8f0;
+            padding: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            color: #5a67d8;
+        }
+
+        .content-box {
+            display: flex;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f1f7f1;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-box:hover {
+            transform: translateY(-10px);
+            transition: 0.3s ease-in-out;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #718096;
+        }
+
+        footer {
+            background-color: #2d3748;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex justify-between items-center p-6">
+        <a href="{{ url_for('home') }}" class="text-xl font-semibold">BuzzInsight</a>
+        <nav class="flex items-center">
+            <a href="{{ url_for('home') }}" class="mr-5 hover:text-gray-900">Home</a>
+            <a href="{{ url_for('about') }}" class="mr-5 hover:text-gray-900">About</a>
+            <a href="{{ url_for('contact') }}" class="mr-5 hover:text-gray-900">Contact Us</a>
+            {% if user %}
+            <a href="{{ url_for('profile') }}" class="mr-5 hover:text-gray-900">Profile</a>
+            {% else %}
+            <a href="{{ url_for('login') }}" class="mr-5 hover:text-gray-900">Login</a>
+            {% endif %}
+        </nav>
+    </header>
+
+    <section>
+        <h1>About BuzzInsight</h1>
+        <div class="content-box">
+            <div class="icon-box">
+                <svg fill="none" stroke="currentColor" class="icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+            </div>
+            <div>
+                <h2>Our Mission</h2>
+                <p>At BuzzInsight, our goal is to simplify your online shopping experience by leveraging advanced sentiment analysis technology to bring you insights based on authentic customer reviews from various e-commerce platforms. We believe in empowering users with data-driven decisions for every purchase.</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <div class="icon-box">
+                <svg fill="none" stroke="currentColor" class="icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                </svg>
+            </div>
+            <div>
+                <h2>What We Do</h2>
+                <p>We analyze customer feedback using AI-powered sentiment analysis models to highlight product strengths and weaknesses. Our platform offers a comparative analysis of products across multiple online stores to help you find the best-rated products with confidence.</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <div class="icon-box">
+                <svg fill="none" stroke="currentColor" class="icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </div>
+            <div>
+                <h2>How It Works</h2>
+                <p>Using advanced natural language processing techniques, we transform unstructured e-commerce reviews into actionable insights. Our sentiment analysis models identify key themes in customer feedback to provide you with the best possible product recommendations.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BuzzInsight. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,543 @@
+[
+    {
+        "id": 1,
+        "name": "Apple iPhone 14 (128 GB)",
+        "price": "₹51,499",
+        "image": "/static/images/Iphone_14_1.png",
+        "description": "Stay productive and improve your performance with the Super Retina XDR display that is comfortable for the eyes. Powered with a 12 MP main camera, enjoy taking pictures with friends and family. With a built-in rechargeable lithium-ion battery and equipped with the MagSafe wireless charging, you can charge your phone quickly up to 50 % in just half an hour by using a 20 W adapter. This phone is loaded with a horde of exciting features such as Siri, face ID, barometer, ambient light sensors etc., and is also resistant to dust and water as it is IP68 rated.",
+        "rating": 4.6,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Iphone_14_1.png",
+            "/static/images/Iphone_14_2.png",
+            "/static/images/Iphone_14_3.png",
+            "/static/images/Iphone_14_4.png"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "SAMSUNG Galaxy S23 5G (Cream, 256 GB)  (8 GB RAM)",
+        "price": "₹49,999",
+        "image": "/static/images/Samsung_S23_1.png",
+        "description": "Give yourself a smartphone that recognises your emotions and responds appropriately. The Samsung Galaxy S23 5G's enhanced AI and Nightography feature produces low-light photos and videos that are vivid and colourful from dusk to dawn and back again. The Snapdragon processor in this phone also offers quick video streaming and gaming. Additionally, adaptive 120 Hz makes scrolling fluid, and Eye Comfort Shield guards against eye fatigue even while looking in low light.",
+        "rating": 4.6,
+        "review": "Positive",
+        "buy_link": "https://www.flipkart.com/samsung-galaxy-s23-5g-cream-256-gb/p/itm745d4b532623e?pid=MOBGMFFXURCVYANE",
+        "images": [
+            "/static/images/Samsung_S23_1.png",
+            "/static/images/Samsung_S23_2.png",
+            "/static/images/Samsung_S23_3.png"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "SAMSUNG 183 L Direct Cool Single Door 4 Star Refrigerator with Base Drawer  with Digital Inverter  (Camellia Purple, RR20C1824CR/HL)",
+        "price": "₹16,490",
+        "description": "High-performance and practical, the Samsung Refrigerator is an exceptional addition to your kitchen. It offers energy efficiency, minimal operating noise, and long-lasting durability with its Digital Inverter technology. And, the Digital Inverter Compressor in this refrigerator automatically changes its speed in response to cooling needs. Also, this refrigerator is protected from voltage fluctuations because it operates with a wide voltage range of 100 V to up to 300 V. Moreover, without requiring a stabiliser, it can keep running steadily and smoothly.",
+        "image": "/static/images/Samsung_refg1.png",
+        "rating": 4.7,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Samsung_refg1.png",
+            "/static/images/Samsung_refg2.png",
+            "/static/images/Samsung_refg3.png"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "realme TechLife 183 L Direct Cool Single Door 4 Star Refrigerator  (Trisha Blue, 183BD4RM24B)",
+        "price": "₹13,290",
+        "description": "This single-door refrigerator offers quick cooling using good-quality copper capillaries. You can also get ice formed in just 90 minutes. It even has stabiliser-free operations where the machine can run smoothly during voltage fluctuations between 160-260 V. With a huge storage capacity, the refrigerator also comes with durable glass shelves and a removable gasket.",
+        "image": "/static/images/Realme_refg1.png",
+        "rating": 4.5,
+        "review": "Negative",
+        "buy_link": "",
+        "images": [
+            "/static/images/Realme_refg1.png",
+            "/static/images/Realme_refg2.png",
+            "/static/images/Realme_refg3.png"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Apple iPhone 16 Pro Max (Desert Titanium, 256 GB)",
+        "price": "₹1,37,900",
+        "description": "iPhone 16 Pro Max. Built for Apple Intelligence. Featuring a stunning titanium design. Camera Control. 4K 120 fps Dolby Vision. And A18 Pro chip.",
+        "image": "/static/images/Iphone_16pro_1.jpeg",
+        "rating": 4.9,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Iphone_16pro_1.jpeg",
+            "/static/images/Iphone_16pro_2.jpeg",
+            "/static/images/Iphone_16pro_3.png"
+
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Apple iPhone 13 (Midnight, 128 GB)",
+        "price": "₹44,999",
+        "description": "iPhone 13. boasts an advanced dual-camera system that allows you to click mesmerising pictures with immaculate clarity. Furthermore, the lightning-fast A15 Bionic chip allows for seamless multitasking, elevating your performance to a new dimension. A big leap in battery life, a durable design, and a bright Super Retina XDR display facilitate boosting your user experience.",
+        "image": "/static/images/Iphone_13_1.jpeg",
+        "rating": 4.9,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Iphone_13_1.jpeg",
+            "/static/images/Iphone_13_2.jpeg",
+            "/static/images/Iphone_13_3.jpeg"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Apple iPhone 16 (Black, 128 GB)",
+        "price": "₹69,999",
+        "description": "iPhone 16. Built for Apple Intelligence. Featuring Camera Control. 48 MP Fusion camera. Five vibrant colours. And A18 chip.",
+        "image": "/static/images/Iphone_16_1.jpeg",
+        "rating": 4.8,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Iphone_16_1.jpeg",
+            "/static/images/Iphone_16_2.jpeg",
+            "/static/images/Iphone_16_3.jpeg"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Apple iPhone 15 (Pink, 128 GB)",
+        "price": "₹64,999",
+        "description": "Experience the iPhone 15 – your dynamic companion. Dynamic Island ensures you stay connected, bubbling up alerts seamlessly while you're busy. Its durable design features infused glass and aerospace-grade aluminum, making it dependable and resistant to water and dust. Capture life with precision using the 48 MP Main Camera, perfect for any shot. Powered by the A16 Bionic Processor, it excels in computational photography and more, all while conserving battery life. Plus, it's USB-C compatible, simplifying your charging needs. Elevate your tech game with the iPhone 15 – innovation at your fingertips. Goodbye cable clutter, hello convenience.",
+        "image": "/static/images/Iphone_15_1.jpeg",
+        "rating": 4.9,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Iphone_15_1.jpeg",
+            "/static/images/Iphone_15_2.jpeg",
+            "/static/images/Iphone_15_3.jpeg"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "SAMSUNG Galaxy S22 5G (Green, 128 GB)  (8 GB RAM)",
+        "price": "₹46,999",
+        "description": "Explore a new range of night photography features on this Samsung Galaxy S22 5G smartphone. You can click stunning images even in low light with the Nightography mode. It is designed with a pro-grade camera which comprises a big pixel sensor that welcomes more light for mind-blowing photography. Built with impressive software and hardware, this phone is a game-changer. With a 120 Hz refresh rate and dynamic AMOLED 2x display, you are going to experience immersive screen time. This phone operates on a Snapdragon 8 Gen 1 processor that delivers quick and hassle- free navigation. This device is protected by Corning Gorilla Glass Victus and has an IP68 waterproof rating.",
+        "image": "/static/images/Samsung_S22_1.jpeg",
+        "rating": 4.5,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Samsung_S22_1.jpeg",
+            "/static/images/Samsung_S22_2.jpeg",
+            "/static/images/Samsung_S22_3.jpeg"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Samsung Galaxy S21 FE 5G with Snapdragon 888 (Graphite, 256 GB)  (8 GB RAM)",
+        "price": "₹34,990",
+        "description": "In a world where speed is king, the Samsung Galaxy S21 FE reigns supreme, offering a seamless blend of power, storage, and style that's sure to delight even the most demanding smartphone aficionados. With its lightning-fast processor, spacious storage, stunning camera capabilities, and long-lasting battery, it's a device that elevates every aspect of your mobile experience. Say hello to a world where fast doesn't just get faster; it gets phenomenal.",
+        "image": "/static/images/Samsung_S21FE_1.jpeg",
+        "rating": 4.8,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Samsung_S21FE_1.jpeg",
+            "/static/images/Samsung_S21FE_2.jpeg",
+            "/static/images/Samsung_S21FE_3.jpeg"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "SAMSUNG Galaxy S24+ 5G (Cobalt Violet, 256 GB)  (12 GB RAM)",
+        "price": "₹59,999",
+        "description": "Take a look at the Samsung Galaxy S24+ smartphone, a remarkable combination of amazing technology and advanced sophistication. Discover the beauty of picture editing with AI power. You can now easily edit your images to make sure each one is flawless. These cameras will make sure you leave with a picture that is pixel-perfect, whether you're zooming in, snapping a particularly lovely selfie, or capturing wide-angle photos. An impressive pixel powerhouse that promises no letdown. At all. Take high-resolution pictures that will surely survive the test of time for many years to come.",
+        "image": "/static/images/Samsung_S24_1.jpeg",
+        "rating": 4.7,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Samsung_S24_1.jpeg",
+            "/static/images/Samsung_S24_2.jpeg",
+            "/static/images/Samsung_S24_3.jpeg"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "SAMSUNG Galaxy S24 Ultra 5G (Titanium Yellow, 512 GB)  (12 GB RAM)",
+        "price": "₹1,15,999",
+        "description": "12 GB RAM | 512 GB ROM /n 17.27 cm (6.8 inch) Quad HD+ Display /n 200MP + 50MP + 12MP + 10MP | 12MP Front Camera /n 5000 mAh Battery /n Snapdragon 8 Gen 3 Processor",
+        "image": "/static/images/Samsung_S24U_1.jpeg",
+        "rating": 4.8,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Samsung_S24U_1.jpeg",
+            "/static/images/Samsung_S24U_1.jpeg",
+            "/static/images/Samsung_S24U_1.jpeg"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "BoAt Wave Fury with 1.83'' HD Display, Bluetooth Calling & Functional Crown Smartwatch  (Metal Grey Strap, Free Size)",
+        "price": "₹1,249",
+        "description": "The boAt Wave Fury, with its 1.83'' HD display and 500+ sports modes, is the ideal partner for your fitness transformation. This watch also comes with bluetooth calling which helps you stay connected to your closed ones. You can always stay on top of your vitals thanks to the watch's heart rate and SpO2 monitoring functions. With its functional crown you may scroll, zoom, and select with a twist and a tap. With IP67 dust, sweat, and splash resistance, nothing can stop you, regardless of how sunny or cloudy the day may be.",
+        "image": "/static/images/Boat_W_1.jpeg",
+        "rating": 4.7,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Boat_W_1.jpeg",
+            "/static/images/Boat_W_2.jpeg",
+            "/static/images/Boat_W_3.jpeg"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "BoAt Lunar Discovery w/ Turn by Turn Navigation, 3.53 cm HD Display & BT Calling Smartwatch  (Cherry Blossom Strap, Free Size)",
+        "price": "₹1,299",
+        "description": "Description not found",
+        "image": "/static/images/Boat_L_1.jpeg",
+        "rating": 4.8,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Boat_L_1.jpeg",
+            "/static/images/Boat_L_2.jpeg",
+            "/static/images/Boat_L_3.jpeg"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Fastrack Revoltt FS1-1.83''|BT Calling|Fast Charge|110+ Sports Mode|200+ WatchFaces|IP68 Smartwatch  (Black Strap, Free Size)",
+        "price": "₹1,099",
+        "description": "Description not found",
+        "image": "/static/images/Fastrack_R_1.jpeg",
+        "rating": 3.1,
+        "review": "Neutral",
+        "buy_link": "",
+        "images": [
+            "/static/images/Fastrack_R_1.jpeg",
+            "/static/images/Fastrack_R_2.jpeg",
+            "/static/images/Fastrack_R_3.jpeg"
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Noise Colorfit Icon 2 1.8'' Display with Bluetooth Calling, AI Voice Assistant Smartwatch  (Black Strap, Regular)",
+        "price": "₹1,049",
+        "description": "Description not found",
+        "image": "/static/images/Nosie_1.jpeg",
+        "rating": 4.6,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Nosie_1.jpeg",
+            "/static/images/Nosie_2.jpeg",
+            "/static/images/Nosie_3.jpeg"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Yash Enterprises PulseWave Smart Band Watch T500 T800 Men BT Call X8 Ultra Smartwatch  (Black Strap, Free Size)",
+        "price": "₹450",
+        "description": "Description not found",
+        "image": "/static/images/Yash_1.jpeg",
+        "rating": 4.7,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Yash_1.jpeg",
+            "/static/images/Yash_2.jpeg",
+            "/static/images/Yash_3.jpeg"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "GameSir I8 Pro Smart Watch Series 8 with multiple Features Smartwatch for Men & Women Smartwatch  (Black Strap, 1.75 Inch Full Screen Display)",
+        "price": "₹599",
+        "description": "The Gamesir I8 Smartwatch combines Bluetooth calling, GPS tracking, and comprehensive fitness monitoring in a sleek design with a Black strap. It offers comfort, style, and compatibility with Android and iOS smartphones, making it an ideal choice for active lifestyles.",
+        "image": "/static/images/GameSir_1.jpeg",
+        "rating": 4.0,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/GameSir_1.jpeg",
+            "/static/images/GameSir_2.jpeg",
+            "/static/images/GameSir_3.jpeg"
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Apple Watch Series 9 GPS 45mm Silver Aluminium Case with Storm Blue Sport Band - S/M  (Silver Strap, Free Size)",
+        "price": "₹28,999",
+        "description": "Apple Watch Series 9 helps you stay connected, active, healthy, and safe. Featuring double tap, a magical way to interact with Apple Watch, and an even-brighter display.",
+        "image": "/static/images/Apple_W_1.jpeg",
+        "rating": 4.9,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Apple_W_1.jpeg",
+            "/static/images/Apple_W_2.jpeg"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Apple Watch Series 10 GPS 42mm Silver Aluminium with Blue Cloud Sport Loop  (Blue Cloud Strap, Free Size)",
+        "price": "₹39,999",
+        "description": "Description not found",
+        "image": "/static/images/AppleW_S10_1.jpeg",
+        "rating": 4.8,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/AppleW_S10_1.jpeg",
+            "/static/images/AppleW_S10_2.jpeg"
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Fastrack Pro with 1.43\" Display & AOD(466x466),Functional Crown,BT Calling Smartwatch  (Blue Strap, Free Size)",
+        "price": "₹1,999",
+        "description": "Fastrack Optimus Pro with 1.43\" AMOLED Display with AOD and 466 x 466 Bright Pixel Resolution Premium Smartwatch|Functional Crown|SingleSync BT Calling|Extensive 24x7 Health Suite with Auto Stress Monitor|24x7 HRM|Sleep Monitor with REM|SpO2 and Breathe Exercise|100+ Sports Modes|Calculator|AI Voice Assistant|In-Built Games|IP68",
+        "image": "/static/images/Fastrack_P_1.jpeg",
+        "rating": 4.6,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Fastrack_P_1.jpeg"
+
+        ]
+    },
+    {
+        "id": 22,
+        "name": "SAMSUNG Galaxy Watch FE, 40mm BT, Sapphire Crystal Display, Sleep Coach, Fall Detection  (Silver Strap, Small)",
+        "price": "₹9,999",
+        "description": "Description not found",
+        "image": "/static/images/SasmungGW_1.jpeg",
+        "rating": 4.4,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/SasmungGW_1.jpeg",
+            "/static/images/SasmungGW_2.jpeg",
+            "/static/images/SasmungGW_3.jpeg"
+        ]
+    },
+    {
+        "id": 23,
+        "name": "SAMSUNG 80 cm (32 Inch) HD Ready LED Smart Tizen TV with Bezel-Free Design | 300+ Free Channels | PurColor | Hyper Real Picture Engine | Triple Protection | SmartThings App Support | TV Key | Connect Share (HDD) | ConnectShare (USB 2.0)  (UA32T4380AKXXL)",
+        "price": "₹12,990",
+        "description": "With this Samsung TV, every image on the screen comes to life, giving you a home theatre experience. With the HD visual quality of this TV, you can enjoy vibrant movie scenes. Additionally, HDR increases the screen's brightness and brings out the subtleties of the material. Moreover, the Contrast Enhancer on this TV improves contrast and offers superb image quality with increased depth.",
+        "image": "/static/images/SamsungTV_1.jpeg",
+        "rating": 4.7,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/SamsungTV_1.jpeg",
+            "/static/images/SamsungTV_2.jpeg",
+            "/static/images/SamsungTV_3.jpeg"
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Thomson Alpha 60 cm (24 Inch) HD Ready LED Smart Linux TV with 20 W Sound Output  (24Alpha001)",
+        "price": "₹5,999",
+        "description": "You can enjoy a theatre-like experience in your living space or bedroom with the Thomson Alpha 60 cm (24) HD Ready TV. This TV is equipped with an HD-resolution display and offers a variety of colour tones and realistic images to enhance your viewing experience. Also, it boasts a smart screen that improves viewing quality and gives your living room decor an attractive edge. Moreover, this TV offers up to 20 W sound output, so you can enjoy a cinema-like sound that goes with high-quality visuals.",
+        "image": "/static/images/Thomson_1.jpeg",
+        "rating": 5.0,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Thomson_1.jpeg",
+            "/static/images/Thomson_2.jpeg",
+            "/static/images/Thomson_3.jpeg"
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Mi by Xiaomi A Series 80 cm (32 inch) HD Ready LED Smart Google TV 2024 Edition with 200+ Free Channels |Dolby Audio | DTS:HD|DTS Virtual: X| Vivid Picture Engine| Dual Band Wi-Fi| Bluetooth 5.0",
+        "price": "₹12,490",
+        "description": "Experience the Mi A Series TV, where stunning design meets exceptional performance. Its sleek metal frame and immersive fullscreen display offer captivating visuals. Enjoy high-quality 20W sound powered by Dolby Audio for an unparalleled audio experience. Google TV organizes movies, shows, and live TV from your apps and subscriptions, providing personalized recommendations. With Xiaomi TV+, access 150+ free live TV channels. Powered by a Quad Core A35 chip, the TV ensures smooth, responsive performance. The minimalistic remote offers effortless control. Redefine your home entertainment with the Mi A Series TV for an extraordinary, seamless viewing experience.",
+        "image": "/static/images/MI_TV_1.jpeg",
+        "rating": 4.6,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/MI_TV_1.jpeg",
+            "/static/images/MI_TV_2.jpeg",
+            "/static/images/MI_TV_3.jpeg"
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Daiwa 80 cm (32 inch) HD Ready LED Smart WebOS TV 2024 Edition with Bezelless design, LG ThinQ and Dolby Audio  (D32H3WOS)",
+        "price": "₹10,999",
+        "description": "You can enjoy a cinematic experience at home with the Daiwa Smart Television. With a sleek bezel-less design spanning from edge to edge, this television elevates your home's ambience by offering a complete smart screen encounter. Utilising High Dynamic Range (HDR) technology, this smart TV enhances colour richness by amplifying light levels, resulting in a broad spectrum of vibrant hues and an enriched viewing experience. Also, with Dolby Audio, this TV immerses you in clear, powerful 24 W sound, making your home entertainment engaging and captivating.",
+        "image": "/static/images/Daiwa_1.jpeg",
+        "rating": 4.9,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Daiwa_1.jpeg",
+            "/static/images/Daiwa_2.jpeg",
+            "/static/images/Daiwa_3.jpeg"
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Hisense A6K 189 cm (75 inch) Ultra HD (4K) LED Smart Google TV with Hands Free Voice Control, Dolby Vision & Atmos and 120 High Refresh Rate Mode  (75A6K)",
+        "price": "₹94,999",
+        "description": "You can watch rich and bright colours come to life on this Hisense A6K TV. The 4K Resolution AI upscaler allows you to watch low-quality videos in 4K resolution. This TV uses multiple picture quality enhancement technologies to elevate the viewing experience. Dolby Vision gives you a theatre-like picture quality at home and HDR10 offers a wide range of colours to enhance the image quality. You can enjoy unlimited entertainment on this Google TV as it provides access to streaming platforms, apps, and games.",
+        "image": "/static/images/Hisense_1.jpeg",
+        "rating": 5.0,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Hisense_1.jpeg",
+            "/static/images/Hisense_2.jpeg",
+            "/static/images/Hisense_3.jpeg"
+        ]
+        
+    },
+    {
+        "id": 28,
+        "name": "Mi by Xiaomi X Pro QLED 108 cm (43 inch) QLED Ultra HD (4K) Smart Google TV 4K Dolby Vision | Dolby Audio |DTS Virtual: X | Vivid Picture Engine 2 with Adaptive Brightness",
+        "price": "₹34,990",
+        "description": "Elevate your home entertainment to an unparalleled level with the Xiaomi X Pro QLED Series TV. Featuring cutting-edge QLED technology and the advanced Vivid Picture Engine 2, it delivers stunning color accuracy and breathtaking clarity, transforming every scene into a visual masterpiece. With 32 GB of internal storage, you have ample space for your favorite content. Enjoy immersive audio with 30W sound supported by Dolby Audio, DTS, and DTS Virtual X, creating a cinematic soundscape. Seamlessly integrated with Google TV, PatchWall, and Xiaomi TV+, it offers a refined and intuitive content experience. Enhanced with MEMC for smooth motion and ALLM for seamless gaming, the Xiaomi X Pro QLED Series TV is the ultimate choice for an extraordinary home entertainment experience.",
+        "image": "/static/images/Xiaomi_1.jpeg",
+        "rating": 4.7,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Xiaomi_1.jpeg",
+            "/static/images/Xiaomi_2.jpeg"
+
+        ]
+    },
+    {
+        "id": 29,
+        "name": "TCL C655 139 cm (55 inch) QLED Ultra HD (4K) Smart Google TV T-SCREEN |Dolby Vision-Atmos | Hands-Free Voice Control| 120 Hz game Accelerator  (55C655)",
+        "price": "₹40,990",
+        "description": "The TCL QLED Ultra HD smart Google TV is packed with user-friendly features to make your TV-watching experience worthwhile. The QLED Pro allows you to immerse yourself in the world of colours as you watch your favourite visuals. This TV comes with an array of features to make your gaming sessions more captivating with Game Master, Gaming in Dolby Vision, Dolby Atmos, and much more. You can always make use of voice assistants to search for your desired content without having to search for them every time.",
+        "image": "/static/images/TCL_1.jpeg",
+        "rating": 4.4,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/TCL_1.jpeg",
+            "/static/images/TCL_2.jpeg",
+            "/static/images/TCL_3.jpeg"
+        ]
+    },
+    {
+        "id": 30,
+        "name": "TCL P71B Pro 139 cm (55 inch) QLED Ultra HD (4K) Smart Google TV Hands Free Voice Control |Dolby Vision- Atmos | DTS Virtual : X, ONKYO 2.1ch |120Hz Game Accelerator (55P71B Pro)  (55P71B Pro)",
+        "price": "₹32,990",
+        "description": "Description not found",
+        "image": "/static/images/TCL_TV_1.jpeg",
+        "rating": 4.7,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/TCL_TV_1.jpeg",
+            "/static/images/TCL_TV_2.jpeg",
+            "/static/images/TCL_TV_3.jpeg"
+        ]
+    },
+    {
+        "id": 31,
+        "name": "LG 80 cm (32 inch) HD Ready LED Smart WebOS TV with Alpha5 Gen5 AI Processor | Magic Remote  (32LQ576BPSA)",
+        "price": "₹15,990",
+        "description": "Find a fun way to binge-watch classics and popular shows on Netflix, Amazon, Hotstar, etc with your family, by bringing home the LG Smart HD TV. It is driven by an α5 Gen 5 AI processor that allows you to have a captivating audio-visual experience. This TV comes with a range of exciting features, such as Dynamic Tone mapping, AI-assisted Magic Remote, sports alert, WebOs, and more so that you can have an interactive user experience on it.",
+        "image": "/static/images/LG80_1.jpeg",
+        "rating": 4.6,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/LG80_1.jpeg",
+            "/static/images/LG80_2.jpeg",
+            "/static/images/LG80_3.jpeg"
+        ]
+    },
+    {
+        "id": 32,
+        "name": "Sansui 80 cm (32 inch) HD Ready LED Smart Google TV with Zen Panel HDR10 & Dolby Audio  (JSWY32GSHD)",
+        "price": "₹10,799",
+        "description": "Bring home the Sansui Google TV to enjoy your favourite movies and shows with stunning visuals. You can get access to several streaming services for unlimited entertainment. It also features HDR 10 for a cinematic experience with realistic details. Additionally, its bezel-less design looks sleek and fits right into your contemporary decor.",
+        "image": "/static/images/Sansui_1.jpeg",
+        "rating": 4.6,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Sansui_1.jpeg",
+            "/static/images/Sansui_2.jpeg",
+            "/static/images/Sansui_3.jpeg"
+        ]
+    },
+    {
+        "id": 33,
+        "name": "Godrej 183 L Direct Cool Single Door 2 Star Refrigerator  with Jumbo Vegetable Tray and Toughened Glass Shelves  (Berry Blue, RD R190B THF BR BL)",
+        "price": "₹12,990",
+        "description": "Presenting the Godrej refrigerator that comes with Turbo Cooling and Advanced Capillary Technology for superior and faster cooling. Experience unparalleled storage with largest vegetable tray and tall refrigerator base for easy cleaning.",
+        "image": "/static/images/Godrej183_1.jpg",
+        "rating": 4.6,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Godrej183_1.jpg",
+            "/static/images/Godrej183_2.jpg",
+            "/static/images/Godrej183_3.jpg"
+        ]
+    },
+  
+    {
+        "id": 34,
+        "name": "Haier 190 L Direct Cool Single Door 2 Star Refrigerator  with 1 Hour Icing TechnologyToughned Glass ShelfLarge Vegetable Box  (Red Steel, HED-202RS-P)",
+        "price": "₹12,290",
+        "description": "Description not found",
+        "image":  "/static/images/Haier190_1.jpeg",
+        "rating": 4.7,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Haier190_1.jpeg",
+            "/static/images/Haier190_2.jpeg",
+            "/static/images/Haier190_3.jpeg"
+        ]
+    },
+    {
+        "id": 35,
+        "name": "CANDY 165 L Direct Cool Single Door 1 Star Refrigerator  with Stabilizer free Operation  (Burgundy Red, CSD1761RM)",
+        "price": "₹9,990",
+        "description": "This Candy refrigerator allows you to keep your food fresh for long, thanks to the Diamond Edge Freezing Technology. The stabiliser-free operations of this refrigerator ensures efficient performance during voltage fluctuations. It has a large vegetable tray so that you have enough space to store all your greens and vegetables. The toughened glass shelves allow you to store food in heavy utensils and provide more space. The PCM door finish protects your refrigerator from rust and gives it an elegant look. It features an antibacterial gasket for easy cleaning and to keep your food free from germs. It has a large bottle shelf to store water and soft drinks. This refrigerator has a thermostat control which adjusts the temperature to keep your food and beverages fresh.",
+        "image":  "/static/images/Candy165_1.jpeg",
+        "rating": 4.5,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/Candy165_1.jpeg",
+            "/static/images/Candy165_1.jpeg",
+            "/static/images/Candy165_1.jpeg"
+        ]
+    },
+    {
+        "id": 36,
+        "name": "LG 185 L Direct Cool Single Door 4 Star Refrigerator with Base Drawer  with Smart Inverter Compressor & Smart Connect  (Scarlet Euphoria, GL-D199OSEY)",
+        "price": "₹16,690",
+        "description": "The smart inverter compressor of this refrigerator ensures an enhanced performance with its silent and stabiliser-free operations. Its smart connect technology connects this refrigerator to your home inverter in case of power failure. This refrigerator can work on solar energy to save energy and electricity bills. It has a digital panel outside the refrigerator that allows you to set the temperature without opening the door. You can store vegetables in its base stand drawer at room temperature and save space in your kitchen. The toughened glass shelves of this refrigerator allows you to store food in heavy utensils with ease.",
+        "image":  "/static/images/LG_185_1.jpeg",
+        "rating": 4.6,
+        "review": "Positive",
+        "buy_link": "",
+        "images": [
+            "/static/images/LG_185_1.jpeg",
+            "/static/images/LG_185_2.jpeg",
+            "/static/images/LG_185_3.jpeg"
+        ]
+    }
+]
